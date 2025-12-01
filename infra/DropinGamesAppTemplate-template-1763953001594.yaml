@@ -1,0 +1,1088 @@
+---
+Metadata:
+  AWSToolsMetrics:
+    IaC_Generator: "arn:aws:cloudformation:us-east-1:471112598903:generatedTemplate/4d6de262-3a7c-4d72-b220-9bdb9f8c99c5"
+Parameters:
+  LambdaFunctionGetgamesCodeZipFiletvcvm:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  When you specify source code inline for a Node.js function, the ``index``\
+      \ file that CFN creates uses the extension ``.js``. This means that LAM treats\
+      \ the file as a CommonJS module. ES modules aren't supported for inline functions.\n\
+      \   For JSON, you must escape quotes and special characters such as newline\
+      \ (``\\n``) with a backslash.\n If you specify a function that interacts with\
+      \ an AWS CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunctionManagegameCodeSourceKMSKeyArnENByS:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The ARN of the KMSlong (KMS) customer managed key that's used to\
+      \ encrypt your function's .zip deployment package. If you don't provide a customer\
+      \ managed key, Lambda uses an [owned key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk)."
+  LambdaFunctionCreategameCodeS3ObjectVersionNPUE0:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+  LambdaFunctionCreategameCodeS3Bucket3oH9J:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  LambdaFunctionManagegameCodeS3KeyPpnfe:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+  LambdaFunctionAuthhandlerCodeZipFileWmRnc:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  When you specify source code inline for a Node.js function, the ``index``\
+      \ file that CFN creates uses the extension ``.js``. This means that LAM treats\
+      \ the file as a CommonJS module. ES modules aren't supported for inline functions.\n\
+      \   For JSON, you must escape quotes and special characters such as newline\
+      \ (``\\n``) with a backslash.\n If you specify a function that interacts with\
+      \ an AWS CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunctionRegistergameCodeS3ObjectVersionrnUfR:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+  LambdaFunctionManagegameCodeZipFile1D75u:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  When you specify source code inline for a Node.js function, the ``index``\
+      \ file that CFN creates uses the extension ``.js``. This means that LAM treats\
+      \ the file as a CommonJS module. ES modules aren't supported for inline functions.\n\
+      \   For JSON, you must escape quotes and special characters such as newline\
+      \ (``\\n``) with a backslash.\n If you specify a function that interacts with\
+      \ an AWS CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunctionRegistergameCodeS3KeyqcxGM:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+  LambdaFunctionGetgamesCodeImageUriyZ3xY:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunctionRegistergameCodeSourceKMSKeyArnKosCl:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The ARN of the KMSlong (KMS) customer managed key that's used to\
+      \ encrypt your function's .zip deployment package. If you don't provide a customer\
+      \ managed key, Lambda uses an [owned key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk)."
+  LambdaFunctionAuthhandlerCodeSourceKMSKeyArnAoklC:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The ARN of the KMSlong (KMS) customer managed key that's used to\
+      \ encrypt your function's .zip deployment package. If you don't provide a customer\
+      \ managed key, Lambda uses an [owned key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk)."
+  LambdaFunctionRegistergameCodeZipFilek1MIv:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  When you specify source code inline for a Node.js function, the ``index``\
+      \ file that CFN creates uses the extension ``.js``. This means that LAM treats\
+      \ the file as a CommonJS module. ES modules aren't supported for inline functions.\n\
+      \   For JSON, you must escape quotes and special characters such as newline\
+      \ (``\\n``) with a backslash.\n If you specify a function that interacts with\
+      \ an AWS CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunctionAuthhandlerCodeImageUrioThy1:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunctionCreategameCodeImageUrioZ4k6:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunctionCreategameCodeZipFile6hxal:
+    NoEcho: "true"
+    Type: "String"
+    Description: "(Node.js and Python) The source code of your Lambda function. If\
+      \ you include your function source inline with this parameter, CFN places it\
+      \ in a file named ``index`` and zips it to create a [deployment package](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-package.html).\
+      \ This zip file cannot exceed 4MB. For the ``Handler`` property, the first part\
+      \ of the handler identifier must be ``index``. For example, ``index.handler``.\n\
+      \  When you specify source code inline for a Node.js function, the ``index``\
+      \ file that CFN creates uses the extension ``.js``. This means that LAM treats\
+      \ the file as a CommonJS module. ES modules aren't supported for inline functions.\n\
+      \   For JSON, you must escape quotes and special characters such as newline\
+      \ (``\\n``) with a backslash.\n If you specify a function that interacts with\
+      \ an AWS CloudFormation custom resource, you don't have to write your own functions\
+      \ to send responses to the custom resource that invoked the function. AWS CloudFormation\
+      \ provides a response module ([cfn-response](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-lambda-function-code-cfnresponsemodule.html))\
+      \ that simplifies sending responses. See [Using Lambda with CloudFormation](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudformation.html)\
+      \ for details."
+  LambdaFunctionGetgamesCodeSourceKMSKeyArn5LVJ3:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The ARN of the KMSlong (KMS) customer managed key that's used to\
+      \ encrypt your function's .zip deployment package. If you don't provide a customer\
+      \ managed key, Lambda uses an [owned key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk)."
+  LambdaFunctionManagegameCodeImageUriNp6lo:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunctionGetgamesCodeS3BucketpVSZT:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  KeyName:
+    Default: "dropin-key"
+    Type: "String"
+    Description: "Name of an existing EC2 KeyPair to enable SSH access"
+  LambdaFunctionCreategameCodeS3Keyh9Usu:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+  LambdaFunctionAuthhandlerCodeS3ObjectVersionYrNPE:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+  LambdaFunctionGetgamesCodeS3ObjectVersione0DAy:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+  LambdaFunctionGetgamesCodeS3KeyW9XsO:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+  LambdaFunctionRegistergameCodeImageUri1lejF:
+    NoEcho: "true"
+    Type: "String"
+    Description: "URI of a [container image](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html)\
+      \ in the Amazon ECR registry."
+  LambdaFunctionRegistergameCodeS3BucketstqBU:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  LambdaFunctionManagegameCodeS3BucketfMEKy:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  LambdaFunctionAuthhandlerCodeS3Bucket8896z:
+    NoEcho: "true"
+    Type: "String"
+    Description: "An Amazon S3 bucket in the same AWS-Region as your function. The\
+      \ bucket can be in a different AWS-account."
+  LambdaFunctionAuthhandlerCodeS3KeykshDe:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The Amazon S3 key of the deployment package."
+  LambdaFunctionCreategameCodeSourceKMSKeyArnT1riB:
+    NoEcho: "true"
+    Type: "String"
+    Description: "The ARN of the KMSlong (KMS) customer managed key that's used to\
+      \ encrypt your function's .zip deployment package. If you don't provide a customer\
+      \ managed key, Lambda uses an [owned key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk)."
+  LambdaFunctionManagegameCodeS3ObjectVersionN1nRX:
+    NoEcho: "true"
+    Type: "String"
+    Description: "For versioned objects, the version of the deployment package object\
+      \ to use."
+Resources:
+  EC2InstanceAg:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::Instance"
+    DeletionPolicy: "Retain"
+    Properties:
+      Tenancy: "default"
+      PrivateIpAddress: "172.31.18.179"
+      UserData: "IyEvYmluL2Jhc2gKeXVtIHVwZGF0ZSAteQp5dW0gaW5zdGFsbCAteSBodHRwZApzeXN0ZW1jdGwgc3RhcnQgaHR0cGQKc3lzdGVtY3RsIGVuYWJsZSBodHRwZAoKY2F0ID4gL3Zhci93d3cvaHRtbC9pbmRleC5odG1sIDw8ICdFT0YnCjwhRE9DVFlQRSBodG1sPgo8aHRtbD4KPGhlYWQ+Cjx0aXRsZT5Pcmdhbml6ZXIgUG9ydGFsPC90aXRsZT4KPHN0eWxlPgpib2R5e2ZvbnQtZmFtaWx5OkFyaWFsO2JhY2tncm91bmQ6bGluZWFyLWdyYWRpZW50KDEzNWRlZywjNjY3ZWVhLCM3NjRiYTIpO2NvbG9yOiNmZmY7cGFkZGluZzo1MHB4O3RleHQtYWxpZ246Y2VudGVyO21hcmdpbjowfQpoMXtmb250LXNpemU6M2VtO21hcmdpbi1ib3R0b206MjBweH0KLmNhcmR7YmFja2dyb3VuZDpyZ2JhKDI1NSwyNTUsMjU1LDAuMik7cGFkZGluZzo0MHB4O2JvcmRlci1yYWRpdXM6MjBweDttYXgtd2lkdGg6NzAwcHg7bWFyZ2luOjMwcHggYXV0bztib3gtc2hhZG93OjAgOHB4IDMycHggcmdiYSgwLDAsMCwwLjMpfQpoMnttYXJnaW4tdG9wOjB9Ci5mZWF0dXJlc3t0ZXh0LWFsaWduOmxlZnQ7bWFyZ2luOjIwcHggYXV0bzttYXgtd2lkdGg6NDAwcHh9Ci5mZWF0dXJle21hcmdpbjoxNXB4IDA7Zm9udC1zaXplOjEuMWVtfQphe2NvbG9yOiM2MWRhZmI7dGV4dC1kZWNvcmF0aW9uOm5vbmU7Zm9udC1zaXplOjEuM2VtO2ZvbnQtd2VpZ2h0OmJvbGQ7ZGlzcGxheTppbmxpbmUtYmxvY2s7bWFyZ2luLXRvcDoyMHB4O3BhZGRpbmc6MTVweCAzMHB4O2JhY2tncm91bmQ6cmdiYSg5NywyMTgsMjUxLDAuMik7Ym9yZGVyLXJhZGl1czoxMHB4O3RyYW5zaXRpb246YWxsIDAuM3N9CmE6aG92ZXJ7YmFja2dyb3VuZDpyZ2JhKDk3LDIxOCwyNTEsMC40KTt0cmFuc2Zvcm06dHJhbnNsYXRlWSgtMnB4KX0KLmZvb3RlcntvcGFjaXR5OjAuNzttYXJnaW4tdG9wOjUwcHg7Zm9udC1zaXplOjAuOWVtfQo8L3N0eWxlPgo8L2hlYWQ+Cjxib2R5Pgo8aDE+8J+PgCBEcm9wLWluIEdhbWVzIE9yZ2FuaXplciBQb3J0YWw8L2gxPgo8ZGl2IGNsYXNzPSJjYXJkIj4KPGgyPldlbGNvbWUsIE9yZ2FuaXplcnMhPC9oMj4KPHAgc3R5bGU9ImZvbnQtc2l6ZToxLjFlbTttYXJnaW46MjBweCAwIj5CYWNrZW5kIHNlcnZpY2UgZm9yIG1hbmFnaW5nIGRyb3AtaW4gZ2FtZXMgYW5kIGFkbWluaXN0cmF0aXZlIG9wZXJhdGlvbnMuPC9wPgo8ZGl2IGNsYXNzPSJmZWF0dXJlcyI+CjxkaXYgY2xhc3M9ImZlYXR1cmUiPuKchSBHYW1lIE1hbmFnZW1lbnQgRGFzaGJvYXJkPC9kaXY+CjxkaXYgY2xhc3M9ImZlYXR1cmUiPuKchSBVc2VyIEFkbWluaXN0cmF0aW9uPC9kaXY+CjxkaXYgY2xhc3M9ImZlYXR1cmUiPuKchSBSZWdpc3RyYXRpb24gTW9uaXRvcmluZzwvZGl2Pgo8ZGl2IGNsYXNzPSJmZWF0dXJlIj7inIUgQW5hbHl0aWNzICYgUmVwb3J0czwvZGl2Pgo8ZGl2IGNsYXNzPSJmZWF0dXJlIj7inIUgQXV0b21hdGVkIE5vdGlmaWNhdGlvbnM8L2Rpdj4KPC9kaXY+CjxwIHN0eWxlPSJtYXJnaW4tdG9wOjMwcHgiPgo8YSBocmVmPSJodHRwOi8vZHJvcGluLWdhbWVzLWZyb250ZW5kLnMzLXdlYnNpdGUtdXMtZWFzdC0xLmFtYXpvbmF3cy5jb20iIHRhcmdldD0iX2JsYW5rIj5WaWV3IFN0dWRlbnQgUG9ydGFsIOKGkjwvYT4KPC9wPgo8L2Rpdj4KPGRpdiBjbGFzcz0iZm9vdGVyIj4KPHA+8J+Wpe+4jyBSdW5uaW5nIG9uIEFtYXpvbiBFQzIgfCDimpbvuI8gTG9hZCBCYWxhbmNlZCB8IPCfk4ggQXV0byBTY2FsaW5nIEVuYWJsZWQ8L3A+CjxwIHN0eWxlPSJtYXJnaW4tdG9wOjEwcHgiPkluZnJhc3RydWN0dXJlOiBFQzIgKyBBTEIgKyBBU0cgKyBMYXVuY2ggVGVtcGxhdGU8L3A+CjwvZGl2Pgo8L2JvZHk+CjwvaHRtbD4KRU9GCgojIENyZWF0ZSBoZWFsdGggY2hlY2sgZW5kcG9pbnQKY2F0ID4gL3Zhci93d3cvaHRtbC9oZWFsdGggPDwgJ0VPRicKT0sKRU9G"
+      InstanceInitiatedShutdownBehavior: "stop"
+      BlockDeviceMappings:
+      - Ebs:
+          SnapshotId: "snap-0881c812c0a9fb912"
+          VolumeType: "gp3"
+          Iops: 3000
+          VolumeSize: 8
+          Encrypted: false
+          DeleteOnTermination: true
+        DeviceName: "/dev/xvda"
+      PrivateDnsNameOptions:
+        EnableResourceNameDnsARecord: true
+        HostnameType: "ip-name"
+        EnableResourceNameDnsAAAARecord: false
+      SubnetId:
+        Ref: "EC2Subnet"
+      SecurityGroupIds:
+      - "sg-0ec6bf8512f55cd64"
+      EbsOptimized: true
+      DisableApiTermination: false
+      SourceDestCheck: true
+      PlacementGroupName: ""
+      VpcId: "vpc-099a0929552af6a54"
+      State:
+        Code: "16"
+        Name: "running"
+      NetworkInterfaces:
+      - Ipv6Addresses: []
+        SubnetId:
+          Ref: "EC2Subnet"
+        SecondaryPrivateIpAddressCount: 0
+        NetworkInterfaceId:
+          Ref: "EC2NetworkInterface"
+        DeviceIndex: "0"
+      ImageId: "ami-0fa3fe0fa7920f68e"
+      InstanceType: "t3.micro"
+      Monitoring: false
+      Tags:
+      - Value: "dropin-organizer-backend"
+        Key: "Name"
+      CreditSpecification:
+        CPUCredits: "unlimited"
+  ApiGatewayDeploymentDZ:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi"
+      Description: " Enable CORS for all endpoints"
+  EC2SubnetJe:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::Subnet"
+    DeletionPolicy: "Retain"
+    Properties:
+      MapPublicIpOnLaunch: true
+      EnableDns64: false
+      VpcId:
+        Ref: "EC2VPC"
+      AvailabilityZoneId: "use1-az1"
+      PrivateDnsNameOptionsOnLaunch:
+        EnableResourceNameDnsARecord: false
+        HostnameType: "ip-name"
+        EnableResourceNameDnsAAAARecord: false
+      CidrBlock: "172.31.0.0/20"
+      Ipv6Native: false
+      Tags: []
+  LambdaPermissionFunctionauthhandler:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunctionAuthhandler"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:us-east-1:471112598903:xrsl4chg6k/*//auth"
+      Principal: "apigateway.amazonaws.com"
+  DynamoDBTableRegistrationsTable:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::DynamoDB::Table"
+    DeletionPolicy: "Retain"
+    Properties:
+      SSESpecification:
+        SSEEnabled: false
+      TableName: "RegistrationsTable"
+      AttributeDefinitions:
+      - AttributeType: "S"
+        AttributeName: "RegistrationID"
+      ContributorInsightsSpecification:
+        Enabled: false
+      BillingMode: "PAY_PER_REQUEST"
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: false
+      WarmThroughput:
+        ReadUnitsPerSecond: 12000
+        WriteUnitsPerSecond: 4000
+      KeySchema:
+      - KeyType: "HASH"
+        AttributeName: "RegistrationID"
+      DeletionProtectionEnabled: false
+      TableClass: "STANDARD"
+      Tags: []
+      TimeToLiveSpecification:
+        Enabled: false
+  ApiGatewayStageProd:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Stage"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi"
+      DeploymentId:
+        Fn::GetAtt:
+        - "ApiGatewayDeploymentJU"
+        - "DeploymentId"
+      StageName: "prod"
+      CacheClusterSize: "0.5"
+      TracingEnabled: false
+      CacheClusterEnabled: false
+  LambdaPermissionFunctionauthhandlerNf:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunctionAuthhandler"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:us-east-1:471112598903:xrsl4chg6k/*/POST/auth"
+      Principal: "apigateway.amazonaws.com"
+  ElasticLoadBalancingV2TargetGroupTargetgroupdropinorganizertargets6f9ed8582be76903:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ElasticLoadBalancingV2::TargetGroup"
+    DeletionPolicy: "Retain"
+    Properties:
+      IpAddressType: "ipv4"
+      HealthCheckIntervalSeconds: 30
+      Matcher:
+        HttpCode: "200"
+      HealthCheckPath: "/health"
+      Port: 80
+      Targets:
+      - Port: 80
+        Id: "i-095d7761b391787a1"
+      - Port: 80
+        Id: "i-0b93fd13e8468c172"
+      HealthCheckEnabled: true
+      ProtocolVersion: "HTTP1"
+      UnhealthyThresholdCount: 2
+      HealthCheckTimeoutSeconds: 5
+      Name: "dropin-organizer-targets"
+      VpcId:
+        Ref: "EC2VPC"
+      HealthyThresholdCount: 5
+      HealthCheckProtocol: "HTTP"
+      TargetGroupAttributes:
+      - Value: "lb_cookie"
+        Key: "stickiness.type"
+      - Value: "86400"
+        Key: "stickiness.app_cookie.duration_seconds"
+      - Value: "1"
+        Key: "target_group_health.dns_failover.minimum_healthy_targets.count"
+      - Value: "use_load_balancer_configuration"
+        Key: "load_balancing.cross_zone.enabled"
+      - Value: "86400"
+        Key: "stickiness.lb_cookie.duration_seconds"
+      - Value: "off"
+        Key: "target_group_health.dns_failover.minimum_healthy_targets.percentage"
+      - Value: "false"
+        Key: "stickiness.enabled"
+      - Value: "off"
+        Key: "target_group_health.unhealthy_state_routing.minimum_healthy_targets.percentage"
+      - Value: "0"
+        Key: "slow_start.duration_seconds"
+      - Value: "300"
+        Key: "deregistration_delay.timeout_seconds"
+      - Value: "1"
+        Key: "target_group_health.unhealthy_state_routing.minimum_healthy_targets.count"
+      - Value: "off"
+        Key: "load_balancing.algorithm.anomaly_mitigation"
+      - Value: ""
+        Key: "stickiness.app_cookie.cookie_name"
+      - Value: "round_robin"
+        Key: "load_balancing.algorithm.type"
+      TargetType: "instance"
+      HealthCheckPort: "traffic-port"
+      Protocol: "HTTP"
+      Tags: []
+  EC2Subnet:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::Subnet"
+    DeletionPolicy: "Retain"
+    Properties:
+      MapPublicIpOnLaunch: true
+      EnableDns64: false
+      VpcId:
+        Ref: "EC2VPC"
+      AvailabilityZoneId: "use1-az4"
+      PrivateDnsNameOptionsOnLaunch:
+        EnableResourceNameDnsARecord: false
+        HostnameType: "ip-name"
+        EnableResourceNameDnsAAAARecord: false
+      CidrBlock: "172.31.16.0/20"
+      Ipv6Native: false
+      Tags: []
+  EC2SecurityGroup:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::SecurityGroup"
+    DeletionPolicy: "Retain"
+    Properties:
+      GroupDescription: "launch-wizard-10 created 2025-11-23T21:07:29.182Z"
+      GroupName: "dropin-backend-sg"
+      VpcId:
+        Ref: "EC2VPC"
+      SecurityGroupIngress:
+      - CidrIp: "0.0.0.0/0"
+        IpProtocol: "tcp"
+        FromPort: 80
+        ToPort: 80
+      - CidrIp: "0.0.0.0/0"
+        IpProtocol: "tcp"
+        FromPort: 22
+        ToPort: 22
+      - CidrIp: "0.0.0.0/0"
+        IpProtocol: "tcp"
+        FromPort: 443
+        ToPort: 443
+      SecurityGroupEgress:
+      - CidrIp: "0.0.0.0/0"
+        IpProtocol: "-1"
+        FromPort: -1
+        ToPort: -1
+  ApiGatewayDeployment:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi"
+      Description: "Production stage"
+  LambdaFunctionGetgames:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "lambda_function.lambda_handler"
+      Code:
+        SourceKMSKeyArn:
+          Ref: "LambdaFunctionGetgamesCodeSourceKMSKeyArn5LVJ3"
+        S3ObjectVersion:
+          Ref: "LambdaFunctionGetgamesCodeS3ObjectVersione0DAy"
+        S3Bucket:
+          Ref: "LambdaFunctionGetgamesCodeS3BucketpVSZT"
+        ZipFile:
+          Ref: "LambdaFunctionGetgamesCodeZipFiletvcvm"
+        ImageUri:
+          Ref: "LambdaFunctionGetgamesCodeImageUriyZ3xY"
+        S3Key:
+          Ref: "LambdaFunctionGetgamesCodeS3KeyW9XsO"
+      Role: "arn:aws:iam::471112598903:role/LabRole"
+      FileSystemConfigs: []
+      FunctionName: "get-games"
+      Runtime: "python3.12"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/get-games"
+      RecursiveLoop: "Terminate"
+      EphemeralStorage:
+        Size: 512
+      Architectures:
+      - "x86_64"
+  DynamoDBTableGamesTable:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::DynamoDB::Table"
+    DeletionPolicy: "Retain"
+    Properties:
+      SSESpecification:
+        SSEEnabled: false
+      TableName: "GamesTable"
+      AttributeDefinitions:
+      - AttributeType: "S"
+        AttributeName: "GameID"
+      ContributorInsightsSpecification:
+        Enabled: false
+      BillingMode: "PAY_PER_REQUEST"
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: false
+      WarmThroughput:
+        ReadUnitsPerSecond: 12000
+        WriteUnitsPerSecond: 4000
+      KeySchema:
+      - KeyType: "HASH"
+        AttributeName: "GameID"
+      DeletionProtectionEnabled: false
+      TableClass: "STANDARD"
+      Tags: []
+      TimeToLiveSpecification:
+        Enabled: false
+  S3BucketDropingamesfrontend:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::S3::Bucket"
+    DeletionPolicy: "Retain"
+    Properties:
+      AbacStatus: "Disabled"
+      WebsiteConfiguration:
+        IndexDocument: "index.html"
+        ErrorDocument: "index.html"
+      PublicAccessBlockConfiguration:
+        RestrictPublicBuckets: false
+        IgnorePublicAcls: false
+        BlockPublicPolicy: false
+        BlockPublicAcls: false
+      BucketName: "dropin-games-frontend"
+      OwnershipControls:
+        Rules:
+        - ObjectOwnership: "BucketOwnerEnforced"
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+        - BucketKeyEnabled: true
+          ServerSideEncryptionByDefault:
+            SSEAlgorithm: "AES256"
+  EC2VolumeAttachment:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::VolumeAttachment"
+    DeletionPolicy: "Retain"
+    Properties:
+      InstanceId: "i-095d7761b391787a1"
+      VolumeId: "vol-06da09e6ccdc288b6"
+      Device: "/dev/xvda"
+  LambdaFunctionRegistergame:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "lambda_function.lambda_handler"
+      Code:
+        SourceKMSKeyArn:
+          Ref: "LambdaFunctionRegistergameCodeSourceKMSKeyArnKosCl"
+        S3ObjectVersion:
+          Ref: "LambdaFunctionRegistergameCodeS3ObjectVersionrnUfR"
+        S3Bucket:
+          Ref: "LambdaFunctionRegistergameCodeS3BucketstqBU"
+        ZipFile:
+          Ref: "LambdaFunctionRegistergameCodeZipFilek1MIv"
+        ImageUri:
+          Ref: "LambdaFunctionRegistergameCodeImageUri1lejF"
+        S3Key:
+          Ref: "LambdaFunctionRegistergameCodeS3KeyqcxGM"
+      Role: "arn:aws:iam::471112598903:role/LabRole"
+      FileSystemConfigs: []
+      FunctionName: "register-game"
+      Runtime: "python3.12"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/register-game"
+      RecursiveLoop: "Terminate"
+      EphemeralStorage:
+        Size: 512
+      Architectures:
+      - "x86_64"
+  ApiGatewayDeploymentKN:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi"
+      Description: "Redeploying after testing"
+  ElasticLoadBalancingV2LoadBalancerLoadbalancerappdropinorganizeralb919863b13f95b42e:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ElasticLoadBalancingV2::LoadBalancer"
+    DeletionPolicy: "Retain"
+    Properties:
+      IpAddressType: "ipv4"
+      SecurityGroups:
+      - "sg-0ec6bf8512f55cd64"
+      LoadBalancerAttributes:
+      - Value: ""
+        Key: "access_logs.s3.prefix"
+      - Value: "append"
+        Key: "routing.http.xff_header_processing.mode"
+      - Value: "true"
+        Key: "routing.http2.enabled"
+      - Value: "false"
+        Key: "waf.fail_open.enabled"
+      - Value: ""
+        Key: "connection_logs.s3.bucket"
+      - Value: "false"
+        Key: "access_logs.s3.enabled"
+      - Value: "false"
+        Key: "zonal_shift.config.enabled"
+      - Value: "defensive"
+        Key: "routing.http.desync_mitigation_mode"
+      - Value: ""
+        Key: "connection_logs.s3.prefix"
+      - Value: ""
+        Key: "health_check_logs.s3.prefix"
+      - Value: "false"
+        Key: "routing.http.x_amzn_tls_version_and_cipher_suite.enabled"
+      - Value: "false"
+        Key: "routing.http.preserve_host_header.enabled"
+      - Value: "true"
+        Key: "load_balancing.cross_zone.enabled"
+      - Value: "false"
+        Key: "health_check_logs.s3.enabled"
+      - Value: ""
+        Key: "health_check_logs.s3.bucket"
+      - Value: "false"
+        Key: "routing.http.xff_client_port.enabled"
+      - Value: ""
+        Key: "access_logs.s3.bucket"
+      - Value: "false"
+        Key: "deletion_protection.enabled"
+      - Value: "3600"
+        Key: "client_keep_alive.seconds"
+      - Value: "false"
+        Key: "routing.http.drop_invalid_header_fields.enabled"
+      - Value: "false"
+        Key: "connection_logs.s3.enabled"
+      - Value: "60"
+        Key: "idle_timeout.timeout_seconds"
+      Subnets:
+      - Ref: "EC2SubnetJe"
+      - Ref: "EC2Subnet"
+      Type: "application"
+      Scheme: "internet-facing"
+      EnablePrefixForIpv6SourceNat: "off"
+      EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic: ""
+      Tags: []
+      Name: "dropin-organizer-alb"
+      SubnetMappings:
+      - SubnetId:
+          Ref: "EC2Subnet"
+      - SubnetId:
+          Ref: "EC2SubnetJe"
+  AutoScalingAutoScalingGroupDropinorganizerasg:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::AutoScaling::AutoScalingGroup"
+    DeletionPolicy: "Retain"
+    Properties:
+      LoadBalancerNames: []
+      ServiceLinkedRoleARN: "arn:aws:iam::471112598903:role/aws-service-role/autoscaling.amazonaws.com/AWSServiceRoleForAutoScaling"
+      TargetGroupARNs:
+      - Ref: "ElasticLoadBalancingV2TargetGroupTargetgroupdropinorganizertargets6f9ed8582be76903"
+      Cooldown: "300"
+      AvailabilityZones:
+      - "us-east-1a"
+      - "us-east-1c"
+      AvailabilityZoneDistribution:
+        CapacityDistributionStrategy: "balanced-best-effort"
+      DesiredCapacity: "1"
+      HealthCheckGracePeriod: 300
+      MetricsCollection: []
+      InstanceLifecyclePolicy:
+        RetentionTriggers:
+          TerminateHookAbandon: "terminate"
+      MaxSize: "2"
+      NewInstancesProtectedFromScaleIn: false
+      MinSize: "1"
+      TerminationPolicies:
+      - "Default"
+      LaunchTemplate:
+        Version: "$Default"
+        LaunchTemplateName: "dropin-organizer-template"
+        LaunchTemplateId: "lt-0973f74a4b19a51fe"
+      AutoScalingGroupName: "dropin-organizer-asg"
+      TrafficSources:
+      - Type: "elbv2"
+        Identifier: "arn:aws:elasticloadbalancing:us-east-1:471112598903:targetgroup/dropin-organizer-targets/6f9ed8582be76903"
+      VPCZoneIdentifier:
+      - Ref: "EC2SubnetJe"
+      - Ref: "EC2Subnet"
+      CapacityReservationSpecification:
+        CapacityReservationPreference: "default"
+      Tags: []
+      HealthCheckType: "ELB"
+  LambdaPermissionFunctionregistergame:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunctionRegistergame"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:us-east-1:471112598903:xrsl4chg6k/*/POST/games/register"
+      Principal: "apigateway.amazonaws.com"
+  EC2Volume:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::Volume"
+    DeletionPolicy: "Retain"
+    Properties:
+      MultiAttachEnabled: false
+      SnapshotId: "snap-0881c812c0a9fb912"
+      VolumeType: "gp3"
+      Encrypted: false
+      Size: 8
+      AutoEnableIO: true
+      AvailabilityZoneId: "use1-az4"
+      AvailabilityZone: "us-east-1c"
+      Throughput: 125
+      Iops: 3000
+      Tags: []
+  LambdaFunctionAuthhandler:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "lambda_function.lambda_handler"
+      Code:
+        SourceKMSKeyArn:
+          Ref: "LambdaFunctionAuthhandlerCodeSourceKMSKeyArnAoklC"
+        S3ObjectVersion:
+          Ref: "LambdaFunctionAuthhandlerCodeS3ObjectVersionYrNPE"
+        S3Bucket:
+          Ref: "LambdaFunctionAuthhandlerCodeS3Bucket8896z"
+        ZipFile:
+          Ref: "LambdaFunctionAuthhandlerCodeZipFileWmRnc"
+        ImageUri:
+          Ref: "LambdaFunctionAuthhandlerCodeImageUrioThy1"
+        S3Key:
+          Ref: "LambdaFunctionAuthhandlerCodeS3KeykshDe"
+      Role: "arn:aws:iam::471112598903:role/LabRole"
+      FileSystemConfigs: []
+      FunctionName: "auth-handler"
+      Runtime: "python3.12"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/auth-handler"
+      RecursiveLoop: "Terminate"
+      EphemeralStorage:
+        Size: 512
+      Architectures:
+      - "x86_64"
+  ApiGatewayRestApi:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::RestApi"
+    DeletionPolicy: "Retain"
+    Properties:
+      ApiKeySourceType: "HEADER"
+      EndpointConfiguration:
+        IpAddressType: "ipv4"
+        Types:
+        - "REGIONAL"
+      DisableExecuteApiEndpoint: false
+      SecurityPolicy: "SecurityPolicy_TLS13_1_3_2025_09"
+      Name: "DropInGamesAPI"
+      EndpointAccessMode: "BASIC"
+  LambdaPermissionFunctionmanagegameVQ:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunctionManagegame"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:us-east-1:471112598903:xrsl4chg6k/*/PUT/games/manage"
+      Principal: "apigateway.amazonaws.com"
+  LambdaPermissionFunctiongetgames:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunctionGetgames"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:us-east-1:471112598903:xrsl4chg6k/*/GET/games"
+      Principal: "apigateway.amazonaws.com"
+  ElasticLoadBalancingV2ListenerListenerappdropinorganizeralb919863b13f95b42e97659bb23b23f8ac:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ElasticLoadBalancingV2::Listener"
+    DeletionPolicy: "Retain"
+    Properties:
+      ListenerAttributes:
+      - Value: "true"
+        Key: "routing.http.response.server.enabled"
+      - Value: ""
+        Key: "routing.http.response.access_control_allow_headers.header_value"
+      - Value: ""
+        Key: "routing.http.response.x_frame_options.header_value"
+      - Value: ""
+        Key: "routing.http.response.access_control_allow_methods.header_value"
+      - Value: ""
+        Key: "routing.http.response.access_control_allow_origin.header_value"
+      - Value: ""
+        Key: "routing.http.response.access_control_allow_credentials.header_value"
+      - Value: ""
+        Key: "routing.http.response.x_content_type_options.header_value"
+      - Value: ""
+        Key: "routing.http.response.content_security_policy.header_value"
+      - Value: ""
+        Key: "routing.http.response.access_control_expose_headers.header_value"
+      - Value: ""
+        Key: "routing.http.response.strict_transport_security.header_value"
+      - Value: ""
+        Key: "routing.http.response.access_control_max_age.header_value"
+      Protocol: "HTTP"
+      LoadBalancerArn:
+        Ref: "ElasticLoadBalancingV2LoadBalancerLoadbalancerappdropinorganizeralb919863b13f95b42e"
+      DefaultActions:
+      - Order: 1
+        TargetGroupArn:
+          Ref: "ElasticLoadBalancingV2TargetGroupTargetgroupdropinorganizertargets6f9ed8582be76903"
+        Type: "forward"
+        ForwardConfig:
+          TargetGroupStickinessConfig:
+            Enabled: false
+            DurationSeconds: 3600
+          TargetGroups:
+          - TargetGroupArn:
+              Ref: "ElasticLoadBalancingV2TargetGroupTargetgroupdropinorganizertargets6f9ed8582be76903"
+            Weight: 1
+      Port: 80
+  S3BucketPolicyDropingamesfrontend:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::S3::BucketPolicy"
+    DeletionPolicy: "Retain"
+    Properties:
+      Bucket:
+        Ref: "S3BucketDropingamesfrontend"
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+        - Resource: "arn:aws:s3:::dropin-games-frontend/*"
+          Action: "s3:GetObject"
+          Effect: "Allow"
+          Principal: "*"
+          Sid: "PublicReadGetObject"
+  EC2VPC:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::VPC"
+    DeletionPolicy: "Retain"
+    Properties:
+      CidrBlock: "172.31.0.0/16"
+      EnableDnsSupport: true
+      InstanceTenancy: "default"
+      EnableDnsHostnames: true
+      Tags: []
+  DynamoDBTableStudentsTable:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::DynamoDB::Table"
+    DeletionPolicy: "Retain"
+    Properties:
+      SSESpecification:
+        SSEEnabled: false
+      TableName: "StudentsTable"
+      AttributeDefinitions:
+      - AttributeType: "S"
+        AttributeName: "StudentID"
+      ContributorInsightsSpecification:
+        Enabled: false
+      BillingMode: "PAY_PER_REQUEST"
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: false
+      WarmThroughput:
+        ReadUnitsPerSecond: 12000
+        WriteUnitsPerSecond: 4000
+      KeySchema:
+      - KeyType: "HASH"
+        AttributeName: "StudentID"
+      DeletionProtectionEnabled: false
+      TableClass: "STANDARD"
+      Tags: []
+      TimeToLiveSpecification:
+        Enabled: false
+  LambdaFunctionManagegame:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "lambda_function.lambda_handler"
+      Code:
+        SourceKMSKeyArn:
+          Ref: "LambdaFunctionManagegameCodeSourceKMSKeyArnENByS"
+        S3ObjectVersion:
+          Ref: "LambdaFunctionManagegameCodeS3ObjectVersionN1nRX"
+        S3Bucket:
+          Ref: "LambdaFunctionManagegameCodeS3BucketfMEKy"
+        ZipFile:
+          Ref: "LambdaFunctionManagegameCodeZipFile1D75u"
+        ImageUri:
+          Ref: "LambdaFunctionManagegameCodeImageUriNp6lo"
+        S3Key:
+          Ref: "LambdaFunctionManagegameCodeS3KeyPpnfe"
+      Role: "arn:aws:iam::471112598903:role/LabRole"
+      FileSystemConfigs: []
+      FunctionName: "manage-game"
+      Runtime: "python3.12"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/manage-game"
+      RecursiveLoop: "Terminate"
+      EphemeralStorage:
+        Size: 512
+      Architectures:
+      - "x86_64"
+  DynamoDBTableUsersTable:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::DynamoDB::Table"
+    DeletionPolicy: "Retain"
+    Properties:
+      SSESpecification:
+        SSEEnabled: false
+      TableName: "UsersTable"
+      AttributeDefinitions:
+      - AttributeType: "S"
+        AttributeName: "UserID"
+      ContributorInsightsSpecification:
+        Enabled: false
+      BillingMode: "PAY_PER_REQUEST"
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: false
+      WarmThroughput:
+        ReadUnitsPerSecond: 12000
+        WriteUnitsPerSecond: 4000
+      KeySchema:
+      - KeyType: "HASH"
+        AttributeName: "UserID"
+      DeletionProtectionEnabled: false
+      TableClass: "STANDARD"
+      Tags: []
+      TimeToLiveSpecification:
+        Enabled: false
+  LambdaPermissionFunctioncreategame:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunctionCreategame"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:us-east-1:471112598903:xrsl4chg6k/*/POST/games"
+      Principal: "apigateway.amazonaws.com"
+  EC2NetworkInterface:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::EC2::NetworkInterface"
+    DeletionPolicy: "Retain"
+    Properties:
+      Description: ""
+      PrivateIpAddress: "172.31.18.179"
+      SecondaryPrivateIpAddressCount: 0
+      Ipv6PrefixCount: 0
+      Ipv4Prefixes: []
+      Ipv4PrefixCount: 0
+      GroupSet:
+      - "sg-0ec6bf8512f55cd64"
+      Ipv6Prefixes: []
+      SubnetId:
+        Ref: "EC2Subnet"
+      SourceDestCheck: true
+      InterfaceType: "interface"
+      Tags: []
+      PublicIpDnsNameOptions:
+        DnsHostnameType: "public-ipv4-dns-name"
+        PublicIpv4DnsName: "ec2-54-234-15-145.compute-1.amazonaws.com"
+  LambdaPermissionFunctionmanagegame:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Permission"
+    DeletionPolicy: "Retain"
+    Properties:
+      FunctionName:
+        Fn::GetAtt:
+        - "LambdaFunctionManagegame"
+        - "Arn"
+      Action: "lambda:InvokeFunction"
+      SourceArn: "arn:aws:execute-api:us-east-1:471112598903:xrsl4chg6k/*/DELETE/games/manage"
+      Principal: "apigateway.amazonaws.com"
+  LambdaFunctionCreategame:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::Lambda::Function"
+    DeletionPolicy: "Retain"
+    Properties:
+      MemorySize: 128
+      Description: ""
+      TracingConfig:
+        Mode: "PassThrough"
+      Timeout: 3
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: "Auto"
+      Handler: "lambda_function.lambda_handler"
+      Code:
+        SourceKMSKeyArn:
+          Ref: "LambdaFunctionCreategameCodeSourceKMSKeyArnT1riB"
+        S3ObjectVersion:
+          Ref: "LambdaFunctionCreategameCodeS3ObjectVersionNPUE0"
+        S3Bucket:
+          Ref: "LambdaFunctionCreategameCodeS3Bucket3oH9J"
+        ZipFile:
+          Ref: "LambdaFunctionCreategameCodeZipFile6hxal"
+        ImageUri:
+          Ref: "LambdaFunctionCreategameCodeImageUrioZ4k6"
+        S3Key:
+          Ref: "LambdaFunctionCreategameCodeS3Keyh9Usu"
+      Role: "arn:aws:iam::471112598903:role/LabRole"
+      FileSystemConfigs: []
+      FunctionName: "create-game"
+      Runtime: "python3.12"
+      PackageType: "Zip"
+      LoggingConfig:
+        LogFormat: "Text"
+        LogGroup: "/aws/lambda/create-game"
+      RecursiveLoop: "Terminate"
+      EphemeralStorage:
+        Size: 512
+      Architectures:
+      - "x86_64"
+  ApiGatewayDeploymentJU:
+    UpdateReplacePolicy: "Retain"
+    Type: "AWS::ApiGateway::Deployment"
+    DeletionPolicy: "Retain"
+    Properties:
+      RestApiId:
+        Ref: "ApiGatewayRestApi"
